@@ -1,0 +1,62 @@
+.angry-grid {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  gap: 0px;
+  height: 100%;
+  width: 50%;
+}
+
+#item-0 {
+  background-color: #3498db;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 4;
+  grid-column-end: 2;
+}
+#item-1 {
+  background-color: yellow;
+  grid-row-start: 1;
+  grid-column-start: 2;
+
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+#item-2 {
+  background-color: #77ee5d;
+  grid-row-start: 2;
+  grid-column-start: 2;
+
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+#item-3 {
+  background-color: #787995;
+  grid-row-start: 3;
+  grid-column-start: 2;
+
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#item-0:hover {
+  background-color: brown;
+}
+#item-1:hover {
+  background-color: blue;
+}
+#item-2:hover {
+  background-color: pink;
+}
+#item-3:hover {
+  background-color: purple;
+}

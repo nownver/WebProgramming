@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="Lab.js"></script>
+</head>
+
+<body>
+    <div class="all">
+        <div class="left">
+            <div class="element-pic">
+                <img style="width: 100px; border-radius: 50%;" class="center" src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t39.30808-1/274353297_1902343823307701_5144478221912243275_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=2b6aad&_nc_eui2=AeFxcB9BEeKdq-wCJDiPRqjlmVkv8xQRGqKZWS_zFBEaouRDQn_li6QhBAISlziVaIpwtmFP3iY8mBLJEcxF7M8l&_nc_ohc=OoQD1CR_GHsAX_SZ56o&_nc_ht=scontent.fbkk7-2.fna&oh=00_AfBvgWKOp_7zKTh_fj3w-E4GCJwIalF0r8XNNjK6LW7djg&oe=64D88AEF">
+            </div>
+            <div class="element">
+                <label>Profile:</label>
+            </div>
+            <div class="element">
+                <textarea style="margin-bottom: 50px;" cols="43" rows="4"></textarea>
+            </div>
+            <div class="element">
+                <label>Address:</label>
+            </div>
+            <div class="element">
+                <input type="text" name="street" id="street" placeholder="Maple Street" class="element-name">
+            </div>
+            <div class="element">
+                <input type="text" name="city" id="city" placeholder="California" class="element-name">
+            </div>
+            <div class="element-country">
+                <select name="country" id="country" onclick="populateCountries()"></select>
+            </div>
+            <div class="element">
+                <label>Contacts:</label>
+            </div>
+            <div class="element">
+                <label>Reference:</label>
+            </div>
+            <div class="element">
+                <textarea style="margin-bottom: 50px;" cols="43" rows="4"></textarea>
+            </div>
+            <div class="element">
+                <label>Favorite Color:</label>
+            </div>
+            <div>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000" class="element-color">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="info">
+                <div class="element">
+                    <label>Personal Information:</label>
+                </div>
+                <div class="element">
+                    <label for="name">Name:</label>
+                </div>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="John Doe" class="element-name">
+                </div>
+                <div class="element">
+                    <label for="age">Age:</label>
+                </div>
+                <div class="element">
+                    <input type="range" name="age" id="age" onchange="updateAgeValue()">
+                    <span id="ageValue">50</span>
+                </div>
+                <div class="element">
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="example@email.com" class="element-name">
+                </div>
+                <div class="element">
+                    <label for="phone">Phone:</label>
+                </div>
+                <div>
+                    <input type="tel" name="phone" id="phone" placeholder="092321321" class="element-name">
+                </div>
+            </div>
+
+            <div class="edu">
+                <div class="element">
+                    <label>Education:</label>
+                </div>
+                <div class="element">
+                    <label for="university">University:</label>
+                </div>
+                <div>
+                    <input type="text" name="university" id="university" placeholder="KMITL" class="element-name">
+                </div>
+                <div class="element">
+                    <label for="degree">Degree:</label>
+                </div>
+                <div>
+                    <input type="text" name="degree" id="degree" placeholder="Software Engineering" class="element-name">
+                </div>
+                <div class="element">
+                    <label for="graduationYear">Year of Graduation:</label>
+                </div>
+                <div>
+                    <input type="date" name="graduationYear" id="graduationYear" class="element-name">
+                </div>   
+            </div>
+            <div class="skill">
+                <div class="element">
+                    <label>Skills & Experience</label>
+                </div>
+                <div class="element">
+                    <label>Skills:</label>
+                </div>
+                <div class="element-box">
+                    <textarea style="margin-bottom: 50px;" cols="43" rows="5"></textarea>
+                </div>
+                <div class="element">
+                    <label>Experience:</label>
+                </div>
+                <div class="element-box">
+                    <textarea style="margin-bottom: 50px;" cols="43" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="submit-contain">
+        <button type="submit" value="Submit" class="submit-button" onclick="displayResume()">Submit</button>
+    </div>
+</body>
+</html>
+    
+    

@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Transcript</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-size:10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        div {
+            padding-left: 20px;
+        }
+
+        table {
+            width: 50%; /* change width to 100% if you want to print */
+            margin: auto;
+
+        }
+
+        th {
+            text-align: center;
+        }
+
+        table input {
+            margin: 2.5px;
+            border: 0;
+            width: 215px;
+        }
+
+        .main {
+            border-left:0.5px solid black;
+            border-right:0.5px solid black;
+            border-collapse: collapse;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <table>
+                <tr>
+                    <td colspan="3" style="text-align: center; padding-top: 10px;">
+                        <label for="unofficialTran" style="font-size: 16px; font-weight: bold;">( Unofficial Transcript )</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: center;">
+                        <label for="school" style="font-size: 13px;">School of Engineering</label>
+                    </td>
+                    <td colspan="4">
+                        <img src="urapilut.jpeg" alt="selfpic" width="90" height="90">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name"><b><i>Name</b></i></label>
+                        <input type="text" name="name" id="name" placeholder="Mr./Miss Nxxxx Xxxxxxx" >
+                    </td>
+                    <td>
+    
+                    </td>
+                </tr>  
+                <tr>
+                    <td>
+                        <label for="dateOfBirth"><b><i>Date of Birth</b></i></label>
+                        <input type="text" name="dateOfBirth" id="dateOfBirth" placeholder="MMMM DD, 20xx" >
+                    </td>
+                    <td>
+                        <label for="studentId"><b><i>Student ID</b></i></label>
+                        <input type="text" name="studentId" id="studentId" placeholder="65xxxxxx"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dateOfAdmission"><b><i>Date of Admission</b></i></label>
+                        <input type="text" name="dateOfAdmission" id="dateOfAdmission" placeholder="20xx" >
+                    </td>
+                    <td>
+                        <label for="dateOfGraduation"><b><i>Date of Graduation</b></i></label>
+                        <input type="text" name="dateOfGraduation" id="dateOfGraduation" placeholder="N/A" >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="degree"><b><i>Degree</b></i></label>
+                        <input type="text" name="degree" id="degree" placeholder="Bachelor of Engineering" ><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="major"><b><i>Major</b></i></label>
+                        <input type="text" name="major" id="major" placeholder="Software Engineering " >
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <table style="border-top:0.5px solid black; border-bottom:0.5px solid black;" class="main">
+                <tr>
+                    <th colspan="2" class="main">COURSE TITLE</th>
+                    <th colspan="1" class="main">CREDIT</th>
+                    <th colspan="1" class="main">GRADE</th>
+                    <th colspan="2" class="main">COURSE TITLE</th>
+                    <th colspan="1" class="main">CREDIT</th>
+                    <th colspan="1" class="main">GRADE</th>
+                </tr>
+                <tr style="border-top:0.5px solid black;">
+                    <td colspan="2" style="text-align: center;"><label for="tranferCredit"><b><u>Transfer Credit</b></u></label></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId" id="courseId" placeholder="13006208" style="width: 50px;">
+                        <input type="text" name="eng1" id="eng1" placeholder="ACADEMIC ENGLISH 1" style="width: 330px;">
+                    </td>
+
+                    <td class="main" style="text-align: center;"><input type="text" name="credit1" id="credit1" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade1" id="grade1" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId2" id="courseId2" placeholder="13006209" style="width: 50px;">
+                        <input type="text" name="eng2" id="eng2" placeholder="ACADEMIC ENGLISH 2" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit2" id="credit2" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade2" id="grade2" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b>GPA:</b>
+                        <input type="text" name="gpa1" id="gpa1" placeholder="X.XX" style="width: 25px; text-align: center;">
+                    </td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main">
+                        <!-- <input type="text" name="blank" id="blank" style="width: 150px;">  -->
+                    </td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>    
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b><u>1st Semester, Year, 2021-2022</u></b></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId3" id="courseId3" placeholder="13006007" style="width: 50px;">
+                        <input type="text" name="cal1" id="cal1" placeholder="CALCULUS 1" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit3" id="credit3" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade3" id="grade3" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId4" id="courseId4" placeholder="13006107" style="width: 50px;">
+                        <input type="text" name="comPro" id="comPro" placeholder="INTRODUCTION TO COMPUTERS AND PROGRAMMING" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit4" id="credit4" placeholder="4" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade4" id="grade4" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId5" id="courseId5" placeholder="13006108" style="width: 50px;">
+                        <input type="text" name="basElec" id="basElec" placeholder="BASIC ELECTRICITY AND ELECTRONICS" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit5" id="credit5" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade5" id="grade5" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId6" id="courseId6" placeholder="13006301" style="width: 50px;">
+                        <input type="text" name="introLogic" id="introLogic" placeholder="INTRODUCTION TO LOGIC" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit6" id="credit6" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade6" id="grade6" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId7" id="courseId7" placeholder="13016235" style="width: 50px;">
+                        <input type="text" name="cPro" id="cPro" placeholder="C PROGRAMMING" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit7" id="credit7" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade7" id="grade7" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId8" id="courseId8" placeholder="13016236" style="width: 50px;">
+                        <input type="text" name="cLab" id="cLab" placeholder="C PROGRAMMING LABORATORY" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit8" id="credit8" placeholder="1" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade8" id="grade8" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b>GPS :</b>
+                        <input type="text" name="gps1" id="gps1" placeholder="X.XX" style="width: 25px; text-align: center; padding-right: 25px;">
+                        <b>GPA :</b>
+                        <input type="text" name="gpa1" id="gpa1" placeholder="X.XX" style="width: 25px; text-align: center;">
+                    </td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b><u>2nd Semester, Year, 2021-2022</u></b></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId9" id="courseId9" placeholder="13006008" style="width: 50px;">
+                        <input type="text" name="cal2" id="cal2" placeholder="CALCULUS 2" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit9" id="credit9" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade9" id="grade9" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId10" id="courseId10" placeholder="13006303" style="width: 50px;">
+                        <input type="text" name="cultural" id="cultural" placeholder="CULTURAL STUDIES" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit10" id="credit10" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade10" id="grade10" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId11" id="courseId11" placeholder="13016105" style="width: 50px;">
+                        <input type="text" name="discreteMath" id="discreteMath" placeholder="DISCRETE MATHEMATICS" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit11" id="credit11" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade11" id="grade11" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId12" id="courseId12" placeholder="13016204" style="width: 50px;">
+                        <input type="text" name="digiCircuit" id="digiCircuit" placeholder="DIGITAL CIRCUIT AND LOGIC DESIGN" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit12" id="credit12" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade12" id="grade12" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId13" id="courseId13" placeholder="13016205" style="width: 50px;">
+                        <input type="text" name="digiLab" id="digiLab" placeholder="DIGITAL CIRCUIT LABORATORY" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit13" id="credit13" placeholder="1" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade13" id="grade13" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId14" id="courseId14" placeholder="13016209" style="width: 50px;">
+                        <input type="text" name="oop" id="oop" placeholder="OBJECT-ORIENTED CONCEPTS AND PROGRAMMING" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit14" id="credit14" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade14" id="grade14" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId15" id="courseId15" placeholder="13016210" style="width: 50px;">
+                        <input type="text" name="oopLab" id="oopLab" placeholder="OBJECT-ORIENTED PROGRAMMING LABORATORY" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit15" id="credit15" placeholder="1" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade15" id="grade15" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>      
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b>GPS :</b>
+                        <input type="text" name="gps2" id="gps2" placeholder="X.XX" style="width: 25px; text-align: center; padding-right: 25px;">
+                        <b>GPA :</b>
+                        <input type="text" name="gpa3" id="gpa3" placeholder="X.XX" style="width: 25px; text-align: center;">
+                    </td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b><u>1st Semester, Year, 2022-2023</u></b></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId16" id="courseId16" placeholder="13006006" style="width: 50px;">
+                        <input type="text" name="linearAlgebra" id="linearAlgebra" placeholder="LINEAR ALGEBRA" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit16" id="credit16" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade16" id="grade16" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId17" id="courseId17" placeholder="13006210" style="width: 50px;">
+                        <input type="text" name="techWriting" id="techWriting" placeholder="TECHNICAL WRITING" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit17" id="credit17" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade17" id="grade17" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId18" id="courseId18" placeholder="13006403" style="width: 50px;">
+                        <input type="text" name="businessAdmin" id="businessAdmin" placeholder="BUSINESS ADMINISTRATION" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit18" id="credit18" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade18" id="grade18" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId19" id="courseId19" placeholder="13016207" style="width: 50px;">
+                        <input type="text" name="compOrgAssembly" id="compOrgAssembly" placeholder="COMPUTER ORGANIZATION AND ASSEMBLY LANGUAGE" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit19" id="credit19" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade19" id="grade19" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId20" id="courseId20" placeholder="13016208" style="width: 50px;">
+                        <input type="text" name="compOrgAssemblyLab" id="compOrgAssemblyLab" placeholder="COMPUTER ORGANIZATION AND ASSEMBLY LANGUAGE LABORATORY" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit20" id="credit20" placeholder="1" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade20" id="grade20" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId21" id="courseId21" placeholder="13016212" style="width: 50px;">
+                        <input type="text" name="dataStructAlgo" id="dataStructAlgo" placeholder="DATA STRUCTURES AND ALGORITHMS" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit21" id="credit21" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade21" id="grade21" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>         
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId22" id="courseId22" placeholder="13016213" style="width: 50px;">
+                        <input type="text" name="dataStructAlgoLab" id="dataStructAlgoLab" placeholder="DATA STRUCTURES AND ALGORITHMS LABORATORY" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit22" id="credit22" placeholder="1" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade22" id="grade22" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2">
+                        <input type="text" name="courseId23" id="courseId23" placeholder="13016249" style="width: 50px;">
+                        <input type="text" name="advOOP" id="advOOP" placeholder="ADVANCED OBJECT-ORIENTED PROGRAMMING" style="width: 330px;">
+                    </td>
+                    <td class="main" style="text-align: center;"><input type="text" name="credit23" id="credit23" placeholder="3" style="width: 10px; text-align: center;"></td>
+                    <td class="main" style="text-align: center;"><input type="text" name="grade23" id="grade23" placeholder="X" style="width: 10px; text-align: center;"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b>GPS :</b>
+                        <input type="text" name="gps3" id="gps3" placeholder="X.XX" style="width: 25px; text-align: center; padding-right: 25px;">
+                        <b>GPA :</b>
+                        <input type="text" name="gpa4" id="gpa4" placeholder="X.XX" style="width: 25px; text-align: center;">
+                    </td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="main" style="text-align: center;"><b>Total number of credits earned:</b>
+                        <input type="total" name="total" id="total" placeholder="XX" style="width: 25px; text-align: center; padding-right: 25px;">
+                    </td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="main"></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                    <td colspan="2" class="main" ></td>
+                    <td class="main"></td>
+                    <td class="main"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+* {
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+img {
+    width: 100%;
+    max-width: 1080px;
+}
+
+.main {
+    max-width: 1080px;
+    min-width: 480px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+.table-sem {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.table-data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.table-data div{
+    border: 1px solid rgb(80, 77, 77);
+    padding: 7px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 750px){
+    .table-sem{
+        flex-direction: column;
+    }
+}

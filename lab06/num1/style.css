@@ -1,0 +1,11 @@
+* {
+    padding: 3px;
+    /* margin: 0; */
+}
+th ,td ,tr{
+    border: 1px solid rgb(80, 77, 77);
+}
+
+table {
+    border-spacing: 0;
+}

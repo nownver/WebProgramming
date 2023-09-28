@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Schedule</title>
+    <style>
+        * {
+            text-align: center;
+            margin: 10px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+        table td, table th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Time Schedule</h1>
+    <label>Select Date</label>
+    <input type = "date" id="selectDate">
+
+    <form action="#">
+        <div id="alert-table">
+            
+        </div>
+        <input type="button" value="Edit" id="edit"><br>
+        <label>Import Schedule</label>
+        <input type="file" id="importFile"><br>
+        <input type="button" value="Save Schedule" id="saveDisplayedSchedule"><br>
+        <input type="button" value="export Schedule" id="exportSchedule"><br>
+        
+    </form>
+    <script src="function.js"></script>
+</body>
+</html>

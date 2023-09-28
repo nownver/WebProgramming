@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function addText() {
+            // event.preventDefault();
+            const table = document.getElementById("shoplist");
+
+            const nameElement = document.getElementById("name");
+            const name = nameElement.value;
+
+            const amountElement = document.getElementById("amount");
+            const amount = amountElement.value;
+
+            const priceElement = document.getElementById("price");
+            const price = priceElement.value;
+
+            // const outputElement = document.getElementById("output");
+            // const lineBreak = document.createElement("br");
+            // const textNode = document.createTextNode(`Name: ${name}, Amount: ${amount}, Price: ${price}`);
+            
+            var trE;
+            var tdE;
+            table.appendChild(trE = document.createElement("tr"));
+            trE.appendChild(tdE = document.createElement("td"));
+            tdE.innerHTML = name;
+            trE.appendChild(tdE = document.createElement("td"));
+            tdE.innerHTML = amount;
+            trE.appendChild(tdE = document.createElement("td"));
+            tdE.innerHTML = price; 
+        }
+
+        function clearText() {
+            const nameElement = document.getElementById("name");
+            const amountElement = document.getElementById("amount");
+            const priceElement = document.getElementById("price");
+            nameElement.value = '';
+            amountElement.value = '';
+            priceElement.value = '';
+        }
+
+        function resetText() {
+            const table = document.getElementById("shoplist");
+    
+            table.innerHTML = "<tr><th>Item Name</th><th>Amount</th><th>Price</th></tr>";
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <h1>Shopping list</h1>
+        </div>
+        <div>
+            <table id="shoplist">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <button type="button" onclick="resetText()">Reset List</button>
+        </div>
+        <div>
+            <div>
+                <label>Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label>Amount</label>
+                <input type="text" id="amount">
+            </div>
+            <div>
+                <label>Price</label>
+                <input type="text" id="price">
+            </div>
+        </div>
+        <div>
+            <button type="button" onclick="addText()">Add</button>
+            <button type="button" onclick="clearText()">Clear</button>
+        </div>
+    </form>
+    <!-- <div id="output"></div> -->
+</body>
+</html>

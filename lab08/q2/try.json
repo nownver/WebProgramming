@@ -1,0 +1,13 @@
+[{
+    "time":"08:00",
+    "activity":"Wake up"
+    },
+    {
+    "time":"07:30",
+    "activity":"Walk to school"
+    },
+    {
+        "time":"12:30",
+        "activity":"Sleep"
+    }
+]

@@ -14,6 +14,7 @@ textarea {
     height: 100%; */
     margin: auto;
     justify-content: center;
+    
 }
 
 .left {
@@ -115,7 +116,7 @@ textarea {
 }
 
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .all {
         flex-direction: column;
     }
@@ -131,13 +132,14 @@ textarea {
     .element-color {
         width: 100%;
     }
+
     .image {
         width: 70px;
     }
-}
+} */
 
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     * {
         font-size: 14px;
     }
@@ -153,7 +155,7 @@ textarea {
     .image {
         width: 150px;
     }
-}  */
+}  
 
 /* @media (min-width: 900px) {
     * {

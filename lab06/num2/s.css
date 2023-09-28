@@ -1,0 +1,27 @@
+*{
+    /* margin: auto; */
+}
+body{
+    text-align: center;
+}
+.bmi-table {
+    border-spacing: 0;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bmi-table th, td {
+    border: 1px solid;
+}
+
+.bmi-table th {
+    background-color: rgb(58, 130, 255);
+    border: 1px solid;
+    padding: 10px 0;
+}
+
+.bmi-table td {
+    border: 1px solid;
+    padding: 5px 0;
+}

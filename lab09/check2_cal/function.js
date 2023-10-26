@@ -18,4 +18,3 @@ document.addEventListener("DOMContentLoaded", function() {
         resultE.innerHTML = displayString;
     });
 });
-12
